@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "4e8e3a04-cd03-4850-bcd2-bbe5ff0713b2",
+		"name": "Todo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Todo",
+			"id": "15d14746-462d-41d8-9885-0ff75c0a7021",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"This tutorial will help you become the best\",\r\n    \"content\": \"This tutorial is the best\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/todos"
+			},
+			"response": []
+		},
+		{
+			"name": "Get  Todo",
+			"id": "7c1d122c-bd0a-44dc-9a53-fe1baa350e86",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/todos/24de5130-ae59-4c61-b613-019800870170"
+			},
+			"response": []
+		},
+		{
+			"name": "Health Checker",
+			"id": "c2589419-76ee-415d-afdc-41271b0038ab",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8000/api/healthchecker"
+			},
+			"response": []
+		},
+		{
+			"name": "Update  Todo",
+			"id": "45612ea1-b4de-454b-8837-bbf222e2eb3d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Updated My first 1 demo post always\",\r\n    \"content\": \"Hello\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/todos/24de5130-ae59-4c61-b613-019800870170"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete  Todo",
+			"id": "2f7f4262-d9fb-40ef-9932-078f54f15e03",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8000/api/todos/null"
+			},
+			"response": []
+		},
+		{
+			"name": "Get All  Todos",
+			"id": "e3434630-4b66-4956-8628-eb9ede844bec",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/todos?page=1&limit=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"todos"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "1"
+						},
+						{
+							"key": "limit",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
