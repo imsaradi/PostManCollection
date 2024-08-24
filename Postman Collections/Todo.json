@@ -34,6 +34,12 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "89yhuyf7687pfgyufity"
+					}
+				},
 				"method": "GET",
 				"header": [],
 				"url": "http://localhost:8000/api/todos/24de5130-ae59-4c61-b613-019800870170"
@@ -47,6 +53,9 @@
 				"disableBodyPruning": true
 			},
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "GET",
 				"header": [],
 				"url": "http://localhost:8000/api/healthchecker"
