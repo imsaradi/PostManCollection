@@ -28,6 +28,28 @@
 			"response": []
 		},
 		{
+			"name": "awsTimeStream",
+			"id": "2c508bb0-8702-4579-86ca-7d538b231250",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"This tutorial will help you become the best\",\r\n    \"content\": \"This tutorial is the best\",\r\n    \"testBest\": \"gitCommitt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8000/api/todos"
+			},
+			"response": []
+		},
+		{
 			"name": "Get  Todo",
 			"id": "7c1d122c-bd0a-44dc-9a53-fe1baa350e86",
 			"protocolProfileBehavior": {
