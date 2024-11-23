@@ -45,7 +45,7 @@
 						}
 					}
 				},
-				"url": "http://localhost:8000/api/todos"
+				"url": "http://localhost:8081/api/healthchecker"
 			},
 			"response": []
 		},
